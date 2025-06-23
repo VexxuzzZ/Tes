@@ -1,6 +1,6 @@
 console.clear();
 console.log('starting...');
-require('./settings/config');
+require('./all/config');
 process.on("uncaughtException", console.error); 
 
 const {
