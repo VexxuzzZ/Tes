@@ -7,10 +7,6 @@ const {
 const fs = require("fs");
 const P = require("pino");
 
-const thumb = fs.readFileSync("./thumbnail.mp4");
-const dbPath = "./usermode.json";
-let userModes = fs.existsSync(dbPath) ? JSON.parse(fs.readFileSync(dbPath)) : {};
-
 function saveModes() {
   fs.writeFileSync(dbPath, JSON.stringify(userModes, null, 2));
 }
